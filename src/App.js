@@ -19,7 +19,7 @@ function App() {
     <main>
       <Grid container spacing={2} style={{height:'100vh'}}>
         <Grid item xs={4} sm={4} md={4} lg={4} style={{backgroundColor:'#03A9F4'}}>
-        <Typography variant="h5" align="left"  style={{color:'white'}} >
+        <Typography mt= {2} ml={10} sx={{ fontFamily: 'Monospace' }} variant="h5" align="left"  style={{color:'white'}} >
               UNITEDPROPERTIES
             </Typography>
             <div>

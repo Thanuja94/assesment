@@ -36,14 +36,22 @@ const ContactForm = () => {
   return (
     <body>
       <Box mt= {2} ml={10} mr={10} sx={{  height: 200 }} style={{backgroundColor:'white'}}>
-      <div>
-        <Typography variant="h6" align="left" style={{ color: 'grey' }} >
+      <div style={{display:"flex"}}> 
+      <Typography  align="left" style={{ color: 'grey' }} >
           step 1 from 3
+          
         </Typography>
-
+        <Typography pl={30}   style={{color:'gray'}}>
+            Lost or have trouble? <Button sx={{  width: 110 }} variant="text"   style={{textTransform: "none", color: '#03A9F4'}} endIcon={<ArrowForward />} >
+        Get help
+      </Button>
+          </Typography>
       </div>
+        
+
+      
       <div>
-        <Typography variant="h4" align="left" pt= {5} >
+        <Typography sx={{ fontWeight: 'bold' }} variant="h4" align="left" pt= {5} >
           Contact Details
         </Typography>
         <Typography style={{color:'gray'}}>
@@ -87,7 +95,7 @@ const ContactForm = () => {
 
 
         <div>
-          <Typography variant="h5" align="left" >
+          <Typography sx={{ fontWeight: 'bold' }} variant="h5" align="left" >
             Privacy policy
           </Typography>
           <p style={{ width: '53ch',color:'gray' }}>
@@ -100,21 +108,21 @@ const ContactForm = () => {
           </p>
 
         </div>
-        <Button  variant="text"  size="small"  endIcon={<ArrowForward />}>
+        <Button sx={{  width: 110 }} variant="text"   style={{textTransform: "none", color: '#03A9F4'}} endIcon={<ArrowForward />} >
         Expand privacy policy
       </Button>
 
       </Box>
 
-      <Box mt= {2} ml={10} mr={10} sx={{  height: 110 }} style={{backgroundColor:'red'}}>
-      <Button  variant="text"  size="small"  startIcon={<ArrowBack />}>
+      <Box mt= {2} ml={10} mr={10} sx={{  height: 110 }} style={{backgroundColor:'white'}}>
+      <Button sx={{ mt: 5, ml: 2 }}  variant="text"  size="small" style={{textTransform: "none", color: '#03A9F4'}} startIcon={<ArrowBack />}>
         Back to the homepage
       </Button>
-      <Button  variant="contained"  size="medium"  >
-        skip for now
+      <Button sx={{ mt: 5, ml: 15 , mr: 2 }} variant="contained"  size="medium"  style={{textTransform: "none" , backgroundColor:'#CFD8DC', color: '#03A9F4' }} >
+        Skip for now
       </Button>
-      <Button   variant="contained"  size="medium" endIcon={<ArrowForward />} >
-       next step
+      <Button  sx={{ mt: 5, ml: 2 }}  variant="contained"  size="medium" style={{textTransform: "none", backgroundColor:'#03A9F4'}} endIcon={<ArrowForward />} >
+       Next step
       </Button>
       </Box>
     </body>
