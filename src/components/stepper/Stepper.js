@@ -45,7 +45,8 @@ const StepperNew = () => {
   };
 
   return (
-    <Box sx={{ maxWidth: 400 }}>
+    <body>
+        <Box  mt= {20} ml={10} mr={10} sx={{ maxWidth: 400 }}>
       <Stepper activeStep={activeStep} orientation="vertical" >
         {steps.map((step, index) => (
           <Step key={step.label}>
@@ -91,6 +92,18 @@ const StepperNew = () => {
         </Paper>
       )}
     </Box>
+
+    <div>
+      <Box mt= {15} ml={10} mr={10} sx={{  height: 175 }} style={{backgroundColor:'white' ,borderRadius: 4}}>
+          <Typography pl={2} pt= {2} style={{color:'gray'}} >
+              We care about your time, that's why we created a 3-stage onboarding that will not a take more than 5 miniuts to complete.
+          </Typography>
+      </Box>
+    </div>
+    </body>
+    
+
+    
   );
 }
 

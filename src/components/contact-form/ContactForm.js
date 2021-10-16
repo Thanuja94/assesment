@@ -3,8 +3,9 @@ import React, { useEffect, useState } from "react";
 import { Typography } from '@mui/material'
 import { TextField } from '@mui/material'
 import { Box } from '@mui/system'
-import MenuItem from '@mui/material/MenuItem'
-
+import Button from '@mui/material/Button';
+import ArrowForward from '@mui/icons-material/ArrowForward';
+import ArrowBack from '@mui/icons-material/ArrowBack';
 
 const ContactForm = () => {
   const countries = [
@@ -34,17 +35,18 @@ const ContactForm = () => {
 
   return (
     <body>
+      <Box mt= {2} ml={10} mr={10} sx={{  height: 200 }} style={{backgroundColor:'white'}}>
       <div>
         <Typography variant="h6" align="left" style={{ color: 'grey' }} >
           step 1 from 3
         </Typography>
 
       </div>
-
       <div>
-        <Typography variant="h4" align="left" >
+        <Typography variant="h4" align="left" pt= {5} >
           Contact Details
         </Typography>
+        <Typography style={{color:'gray'}}>
         <p>
           Welcome to united United Properties. we are glad to see you! Let's get
           <div>
@@ -53,9 +55,15 @@ const ContactForm = () => {
 
 
         </p>
+        </Typography>
+        
       </div>
+      </Box>
+      
 
-      <Box component="form" sx={{ '& > :not(style)': { m: 2, width: '25ch' }, }} noValidate autoComplete="off">
+      
+
+      <Box component="form" ml={10} mt={1} sx={{ '& > :not(style)': { m: 2, width: '25ch' }, }} noValidate autoComplete="off">
 
 
         <TextField id="f-name" label="Full name" variant="standard" />
@@ -76,13 +84,13 @@ const ContactForm = () => {
           </TextField>
         </div>
 
-       
+
 
         <div>
           <Typography variant="h5" align="left" >
             Privacy policy
           </Typography>
-          <p style={{ width: '53ch' }}>
+          <p style={{ width: '53ch',color:'gray' }}>
             We know you care about how your personal information is used and
             <div>
               shared, so we take your privacy seriously
@@ -92,8 +100,22 @@ const ContactForm = () => {
           </p>
 
         </div>
+        <Button  variant="text"  size="small"  endIcon={<ArrowForward />}>
+        Expand privacy policy
+      </Button>
 
+      </Box>
 
+      <Box mt= {2} ml={10} mr={10} sx={{  height: 110 }} style={{backgroundColor:'red'}}>
+      <Button  variant="text"  size="small"  startIcon={<ArrowBack />}>
+        Back to the homepage
+      </Button>
+      <Button  variant="contained"  size="medium"  >
+        skip for now
+      </Button>
+      <Button   variant="contained"  size="medium" endIcon={<ArrowForward />} >
+       next step
+      </Button>
       </Box>
     </body>
   );
