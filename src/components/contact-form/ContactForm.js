@@ -42,7 +42,7 @@ const ContactForm = () => {
           
         </Typography>
         <Typography pl={30}   style={{color:'gray'}}>
-            Lost or have trouble? <Button sx={{  width: 110 }} variant="text"   style={{textTransform: "none", color: '#03A9F4'}} endIcon={<ArrowForward />} >
+            Lost or have trouble? <Button sx={{  width: 110 }} variant="text"   style={{textTransform: "none", color: '#35A0EE'}} endIcon={<ArrowForward />} >
         Get help
       </Button>
           </Typography>
@@ -108,20 +108,20 @@ const ContactForm = () => {
           </p>
 
         </div>
-        <Button sx={{  width: 110 }} variant="text"   style={{textTransform: "none", color: '#03A9F4'}} endIcon={<ArrowForward />} >
+        <Button sx={{  width: 110 }} variant="text"   style={{textTransform: "none", color: '#35A0EE'}} endIcon={<ArrowForward />} >
         Expand privacy policy
       </Button>
 
       </Box>
 
       <Box mt= {2} ml={10} mr={10} sx={{  height: 110 }} style={{backgroundColor:'white'}}>
-      <Button sx={{ mt: 5, ml: 2 }}  variant="text"  size="small" style={{textTransform: "none", color: '#03A9F4'}} startIcon={<ArrowBack />}>
+      <Button sx={{ mt: 5, ml: 2 }}  variant="text"  size="small" style={{textTransform: "none", color: '#35A0EE'}} startIcon={<ArrowBack />}>
         Back to the homepage
       </Button>
-      <Button sx={{ mt: 5, ml: 15 , mr: 2 }} variant="contained"  size="medium"  style={{textTransform: "none" , backgroundColor:'#CFD8DC', color: '#03A9F4' }} >
+      <Button sx={{ mt: 5, ml: 15 , mr: 2 }} variant="contained"  size="medium"  style={{textTransform: "none" , backgroundColor:'#CFD8DC', color: '#35A0EE' }} >
         Skip for now
       </Button>
-      <Button  sx={{ mt: 5, ml: 2 }}  variant="contained"  size="medium" style={{textTransform: "none", backgroundColor:'#03A9F4'}} endIcon={<ArrowForward />} >
+      <Button  sx={{ mt: 5, ml: 2 }}  variant="contained"  size="medium" style={{textTransform: "none", backgroundColor:'#35A0EE'}} endIcon={<ArrowForward />} >
        Next step
       </Button>
       </Box>
