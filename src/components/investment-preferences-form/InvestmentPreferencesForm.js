@@ -5,7 +5,7 @@ import { Box } from '@mui/system'
 import Button from '@mui/material/Button';
 import ArrowForward from '@mui/icons-material/ArrowForward';
 import ArrowBack from '@mui/icons-material/ArrowBack';
-import Checkbox from '@mui/material/Checkbox';
+
 
 const InvestmentPreferencesForm = () => {
     // const label = { inputProps: { 'aria-label': 'Checkbox demo' } };

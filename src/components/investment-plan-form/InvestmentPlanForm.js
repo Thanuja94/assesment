@@ -1,51 +1,15 @@
 
 import React, { useEffect, useState } from "react";
 import { Typography } from '@mui/material'
-import { TextField } from '@mui/material'
+
 import { Box, width } from '@mui/system'
 import Button from '@mui/material/Button';
 import ArrowForward from '@mui/icons-material/ArrowForward';
 import ArrowBack from '@mui/icons-material/ArrowBack';
-import InputAdornment from '@mui/material/InputAdornment';
-import Slider from '@mui/material/Slider';
+
 
 const InvestmentPlanForm = () => {
-    const marks = [
-        {
-            value: 10,
-            label: '$10000',
-        },
-        {
-            value: 30,
-            label: '$50000',
-        },
-        {
-            value: 50,
-            label: '$100000',
-        },
-        {
-            value: 70,
-            label: '$200000',
-        },
-        {
-            value: 85,
-            label: '$500000',
-        },
-        {
-            value: 100,
-            label: '$1000000',
-        },
-    ];
-
-    function valuetext(value) {
-        return `$${value}`;
-
-
-    }
-    function valueLabelFormat(value) {
-        return marks.findIndex((mark) => mark.value === value) + 1;
-    }
-
+    
     return (
         <body>
             <Box mt={2} ml={10} mr={10} sx={{ height: 50 }} style={{ backgroundColor: 'white' }}>

@@ -6,40 +6,20 @@ import { Box } from '@mui/system'
 import Button from '@mui/material/Button';
 import ArrowForward from '@mui/icons-material/ArrowForward';
 import ArrowBack from '@mui/icons-material/ArrowBack';
-// import {Route,Router,NavLink,HashRouter,BrowserRouter} from "react-router-dom";
-// import InvestmentPlanForm from './components/investment-plan-form/InvestmentPlanForm';
+import ContactFormContent from './ContactFormContent';
+import InvestmentPlanContent from '../investment-plan-form/InvestmentPlanContent';
+import InvestmentPreferContent from '../investment-preferences-form/InvestmentPreferContent';
+
+
+
 
 const ContactForm = () => {
-  const countries = [
-    {
-      value: 'Sri Lanka',
-      label: 'Sri Lanka',
-    },
-    {
-      value: 'India',
-      label: 'India',
-    },
-    {
-      value: 'Ukraine',
-      label: 'Ukraine',
-    },
-    {
-      value: 'Japan',
-      label: 'Japan',
-    },
-  ];
-
-  const [country, setCountry] = React.useState('Sri Lanka');
-
-  const handleChange = (event) => {
-    setCountry(event.target.value);
-  };
-
+  
   // const onClickNextStep = () => this.props.history.push("/InvestmentPlanForm");
 
   return (
     <body>
-      <Box mt={2} ml={10} mr={10} sx={{ height: 50 }} style={{ backgroundColor: 'red' }}>
+      <Box mt={2} ml={10} mr={10} sx={{ height: 50 }} >
         <div style={{ display: "flex" }}>
           <Typography align="left" style={{ color: 'grey' }} >
             step 1 from 3
@@ -56,7 +36,11 @@ const ContactForm = () => {
 
 
       </Box>
-
+        <Box>
+        {/* <ContactFormContent/> */}
+        {/* <InvestmentPlanContent/> */}
+        <InvestmentPreferContent/>
+        </Box>
       
 
 

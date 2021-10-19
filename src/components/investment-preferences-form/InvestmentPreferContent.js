@@ -2,9 +2,6 @@
 import React, { useEffect, useState } from "react";
 import { Typography } from '@mui/material'
 import { Box } from '@mui/system'
-import Button from '@mui/material/Button';
-import ArrowForward from '@mui/icons-material/ArrowForward';
-import ArrowBack from '@mui/icons-material/ArrowBack';
 import Checkbox from '@mui/material/Checkbox';
 
 const InvestmentPreferContent= () => {

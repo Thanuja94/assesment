@@ -29,8 +29,8 @@ function App() {
         </Grid>
         <Grid item xs={8} sm={8} md={8} lg={8} style={{backgroundColor:'white'}}>
           {/* <InvestmentPlanForm/> */}
-          {/* <ContactForm/> */}
-         <InvestmentPreferencesForm/>
+          <ContactForm/>
+         {/* <InvestmentPreferencesForm/> */}
          
         </Grid>
       </Grid>
