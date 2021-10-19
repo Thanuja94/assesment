@@ -4,12 +4,11 @@ import * as React from 'react';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import { Grid, Typography } from '@mui/material';
-
-
 import ContactForm from './components/contact-form/ContactForm';
 import Stepper from './components/stepper/Stepper';
 import { grid } from '@mui/system';
 import InvestmentPlanForm from './components/investment-plan-form/InvestmentPlanForm';
+import InvestmentPreferencesForm from './components/investment-preferences-form/InvestmentPreferencesForm';
 
 
 
@@ -29,8 +28,9 @@ function App() {
           
         </Grid>
         <Grid item xs={8} sm={8} md={8} lg={8} style={{backgroundColor:'white'}}>
-          <InvestmentPlanForm/>
+          {/* <InvestmentPlanForm/> */}
           {/* <ContactForm/> */}
+         <InvestmentPreferencesForm/>
          
         </Grid>
       </Grid>

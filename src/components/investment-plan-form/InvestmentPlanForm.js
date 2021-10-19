@@ -101,46 +101,46 @@ const InvestmentPlanForm = () => {
 
                 </div>
                 <div>
-                  <Box sx={{ width: 540 }} >
-                  <Slider
-                        aria-label="Amonts"
-                        defaultValue={10}
-                        valueLabelFormat={valueLabelFormat}
-                        getAriaValueText={valuetext}
-                        step={null}
-                        valueLabelDisplay="off"
-                        marks={marks}
+                    <Box sx={{ width: 540 }} >
+                        <Slider
+                            aria-label="Amonts"
+                            defaultValue={10}
+                            valueLabelFormat={valueLabelFormat}
+                            getAriaValueText={valuetext}
+                            step={null}
+                            valueLabelDisplay="off"
+                            marks={marks}
                         // valueLabelDisplay="on"
-                    />
-                  </Box>
-                    
+                        />
+                    </Box>
+
                 </div>
                 <div>
-                
-                    <Typography sx={{ fontWeight: 'bold' , width: 500, mt:5 }} variant="h6" align="left" >
-                       Are You an accredited investor?
+
+                    <Typography sx={{ fontWeight: 'bold', width: 500, mt: 5 }} variant="h6" align="left" >
+                        Are You an accredited investor?
                     </Typography>
-                  
-                  
+
+
 
                 </div>
 
 
-                
+
             </Box>
             <Box mt={0} ml={10} mr={10} sx={{ height: 110 }} style={{ backgroundColor: 'white' }}>
-                
-                <Button sx={{ mt: 1, ml: 5, mr: 2, width: 100}} variant="outlined" size="medium" style={{ textTransform: "none" , color: '#35A0EE' }} >
+
+                <Button sx={{ mt: 1, ml: 5, mr: 2, width: 100 }} variant="outlined" size="medium" style={{ textTransform: "none", color: '#35A0EE' }} >
                     Yes
                 </Button>
-                <Button sx={{ mt: 1, ml: 2, width: 100}} variant="outlined" size="medium" style={{ textTransform: "none", color: '#35A0EE' }}  >
+                <Button sx={{ mt: 1, ml: 2, width: 100 }} variant="outlined" size="medium" style={{ textTransform: "none", color: '#35A0EE' }}  >
                     No
                 </Button>
 
-                </Box>
-            
-                
-            <Box mt={2} ml={10} mr={10} sx={{ height: 110 }} style={{ backgroundColor: 'white' }}>
+            </Box>
+
+
+            <Box mt={7} ml={10} mr={10} sx={{ height: 110 }} style={{ backgroundColor: 'white' }}>
                 <Button sx={{ mt: 5, ml: 2 }} variant="text" size="small" style={{ textTransform: "none", color: '#35A0EE' }} startIcon={<ArrowBack />}>
                     Back to the previous step
                 </Button>
